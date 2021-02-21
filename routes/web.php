@@ -14,24 +14,5 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('/string', function () {
-    return 'string';
-});
-
-Route::get('/array', function () {
-    return [1,2,3];
-});
-
-Route::get('/json', function () {
-    return response()->json([
-        'name' => 'Nathan',
-        'course' => 'Laravel Beginners to Advanced',
-    ]);
-});
-
-Route::get('/users', function () {
-    return redirect('/');
+    return view('home');
 });
