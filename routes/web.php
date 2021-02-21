@@ -18,8 +18,6 @@ Route::get('/', function () {
     return view('home');
 });
 
-//Laravel 8
+// Laravel 8
 Route::get('/products', [ProductsController::class, 'index']);
-
-//Laravel 8 (Also New)
-Route::get('/products-alternate', 'App\Http\Controllers\ProductsController@index');
+Route::get('/products/about', [ProductsController::class, 'about']);
